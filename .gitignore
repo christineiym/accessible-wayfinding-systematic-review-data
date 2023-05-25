@@ -2,3 +2,4 @@
 scratch/
 .ipnyb_checkpoints/
 *.db
+*.db-journal
