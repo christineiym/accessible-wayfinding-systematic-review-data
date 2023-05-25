@@ -1,4 +1,4 @@
 .DS_Store
 scratch/
-data/sqlite/
 .ipnyb_checkpoints/
+.db
