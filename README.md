@@ -1,6 +1,11 @@
 # accessible-wayfinding-systematic-review-data
 
-Data for a systematic review of accessible wayfinding and navigation, conducted using as described in Section 3 of [Prandi et al.'s "Accesible wayfinding and navigation: a systematic mapping study"](https://link.springer.com/article/10.1007/s10209-021-00843-x) (Research question: "Which devices and software applications for accessible wayfinding and navigation have been proposed in scientific literature?"), but updated for post-2021. Search conducted May 25, 2023 using Scopus (access provided by UNC Chapel Hill Libraries).
+Raw data and associated tools (Jupyter notebooks for each step of the workflow) for a systematic review of accessible wayfinding and navigation, conducted using as described in Section 3 of [Prandi et al.'s "Accesible wayfinding and navigation: a systematic mapping study"](https://link.springer.com/article/10.1007/s10209-021-00843-x) (Research question: "Which devices and software applications for accessible wayfinding and navigation have been proposed in scientific literature?"), but updated for post-2021. Search conducted May 25, 2023 using Scopus (access provided by UNC Chapel Hill Libraries).
+
+## Contributions and Data Availability
+- Feel free to clone and/or fork for your use! Contributions via pull request are welcome.
+- If relevant, I ask that you cite this repository with the website link (https://github.com/christineiym/accessible-wayfinding-systematic-review-data). Thanks!
+- To request final analysis results, please email [christine.mendoza@unc.edu](mailto:christine.mendoza@unc.edu)! 
 
 ## Paper Search Criteria
 
@@ -55,6 +60,7 @@ TITLE-ABS-KEY ( ( accessible  OR  accessibility )  AND  ( city  OR  indoor  OR  
 - Wearable
 - Smart
 - Tactile/public interfaces
+- Multiple
 
 ### Dimension 1: Context of Use
 - Indoor
@@ -85,12 +91,3 @@ TITLE-ABS-KEY ( ( accessible  OR  accessibility )  AND  ( city  OR  indoor  OR  
 - Design time
 - System evaluation
 - Both
-
-## Paper Data
-Data have been loaded into an sqlite database accessible via an associated Jupyter notebook. Schemas for the tables are below. (in progress)
-
-- All papers, bibtex
-- Stage 1
-- Stage 2
-- Duplicates (1977 to present)
-- Final papers included
