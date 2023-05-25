@@ -1,14 +1,23 @@
 # accessible-wayfinding-systematic-review-data
 
-Data for a systematic review of accessible wayfinding and navigation, conducted using as described in Section 3 of [Prandi et al.'s "Accesible wayfinding and navigation: a systematic mapping study"](https://link.springer.com/article/10.1007/s10209-021-00843-x) (Research question: "Which devices and software applications for accessible wayfinding and navigation have been proposed in scientific literature?"), but updated for post-2021. Search conducted May 24, 2023 using Scopus (access provided by UNC Chapel Hill Libraries).
+Data for a systematic review of accessible wayfinding and navigation, conducted using as described in Section 3 of [Prandi et al.'s "Accesible wayfinding and navigation: a systematic mapping study"](https://link.springer.com/article/10.1007/s10209-021-00843-x) (Research question: "Which devices and software applications for accessible wayfinding and navigation have been proposed in scientific literature?"), but updated for post-2021. Search conducted May 25, 2023 using Scopus (access provided by UNC Chapel Hill Libraries).
 
 ## Paper Search Criteria
 
-*Search string:* (accessible OR accessibility) AND (city OR indoor OR urban OR campus OR university) AND (wayfinding OR navigation OR mobility) AND (application OR system OR map)
+*Initial search string:* (accessible OR accessibility) AND (city OR indoor OR urban OR campus OR university) AND (wayfinding OR navigation OR mobility) AND (application OR system OR map)
 
 *Scopus subjects:* "Computer Science", "Engineering"
 
 *Publication time range:* 2021, 2022 (2023 is analyzed separately)
+
+*Language*: English
+
+- Note: While Prandi et al. do not consider papers not written in English, this repository briefly examines Spanish-language papers from 2010 to 2023 separately, albeit limited by the English-language focus of Scopus.
+
+*Final search string:*
+```
+TITLE-ABS-KEY ( ( accessible  OR  accessibility )  AND  ( city  OR  indoor  OR  urban  OR  campus  OR  university )  AND  ( wayfinding  OR  navigation  OR  mobility )  AND  ( application  OR  system  OR  map ) )  AND  ( LIMIT-TO ( SUBJAREA ,  "ENGI" )  OR  LIMIT-TO ( SUBJAREA ,  "COMP" ) )  AND  ( LIMIT-TO ( PUBYEAR ,  2022 )  OR  LIMIT-TO ( PUBYEAR ,  2021 ) )  AND  ( LIMIT-TO ( LANGUAGE ,  "English" ) ) 
+```
 
 ## Exclusion Criteria
 
@@ -16,9 +25,7 @@ Data for a systematic review of accessible wayfinding and navigation, conducted 
 
 *Aspects analyzed:* Title, abstract, paper type
 
-*Exclusion criteria:* Off-topic, duplicates, introductory papers to conference/workshop proceedings, non-English language
-
-- Note: While Prandi et al. do not consider papers not written in English, this repository briefly examines Spanish-language papers from 2010 to 2023 separately, albeit limited by the English-language focus of Scopus.
+*Exclusion criteria:* Off-topic, duplicates, introductory papers to conference/workshop proceedings
 
 ### Stage 2
 
@@ -78,3 +85,12 @@ Data for a systematic review of accessible wayfinding and navigation, conducted 
 - Design time
 - System evaluation
 - Both
+
+## Paper Data
+Data have been loaded into an sqlite database accessible via an associated Jupyter notebook. Schemas for the tables are below. (in progress)
+
+- All papers, bibtex
+- Stage 1
+- Stage 2
+- Duplicates (1977 to present)
+- Final papers included
