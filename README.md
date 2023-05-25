@@ -5,7 +5,7 @@ Raw data and associated tools (Jupyter notebooks for each step of the workflow) 
 ## Contributions and Data Availability
 - Feel free to clone and/or fork for your use! Contributions via pull request are welcome.
 - If relevant, I ask that you cite this repository with the website link (https://github.com/christineiym/accessible-wayfinding-systematic-review-data). Thanks!
-- To request final analysis results, please email [christine.mendoza@unc.edu](mailto:christine.mendoza@unc.edu)! 
+- To request final analysis results, please email [christine.mendoza@unc.edu](mailto:christine.mendoza@unc.edu).
 
 ## Paper Search Criteria
 
