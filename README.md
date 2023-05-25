@@ -1,5 +1,7 @@
 # accessible-wayfinding-systematic-review-data
 
+NOTE: Currently in progress! This note will be removed upon completion of the notebooks.
+
 Raw data and associated tools (Jupyter notebooks for each step of the workflow) for a systematic review of accessible wayfinding and navigation, conducted using as described in Section 3 of [Prandi et al.'s "Accesible wayfinding and navigation: a systematic mapping study"](https://link.springer.com/article/10.1007/s10209-021-00843-x) (Research question: "Which devices and software applications for accessible wayfinding and navigation have been proposed in scientific literature?"), but updated for post-2021. Search conducted May 25, 2023 using Scopus (access provided by UNC Chapel Hill Libraries).
 
 ## Contributions and Data Availability
