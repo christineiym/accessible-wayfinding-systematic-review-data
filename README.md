@@ -2,7 +2,7 @@
 
 NOTE: Currently in progress! This note will be removed upon completion of the notebooks.
 
-Raw data and associated tools (Jupyter notebooks for each step of the workflow) for a systematic review of accessible wayfinding and navigation, conducted using as described in Section 3 of [Prandi et al.'s "Accesible wayfinding and navigation: a systematic mapping study"](https://link.springer.com/article/10.1007/s10209-021-00843-x) (Research question: "Which devices and software applications for accessible wayfinding and navigation have been proposed in scientific literature?"), but updated for post-2021. Search conducted May 25, 2023 using Scopus (access provided by UNC Chapel Hill Libraries).
+Raw data and associated tools (Jupyter notebooks for each step of the workflow) for a systematic review of accessible wayfinding and navigation, conducted using as described in Section 3 of [Prandi et al.'s "Accesible wayfinding and navigation: a systematic mapping study"](https://link.springer.com/article/10.1007/s10209-021-00843-x) [1](##References) (Research question: "Which devices and software applications for accessible wayfinding and navigation have been proposed in scientific literature?"), but updated for post-2021. Search conducted May 25, 2023 using Scopus (access provided by UNC Chapel Hill Libraries).
 
 ## Contributions and Data Availability
 - Feel free to clone and/or fork for your use! Contributions via pull request are welcome.
@@ -93,3 +93,6 @@ TITLE-ABS-KEY ( ( accessible  OR  accessibility )  AND  ( city  OR  indoor  OR  
 - Design time
 - System evaluation
 - Both
+
+## References
+1. Prandi, C., Barricelli, B.R., Mirri, S. et al. Accessible wayfinding and navigation: a systematic mapping study. Univ Access Inf Soc 22, 185–212 (2023). https://doi.org/10.1007/s10209-021-00843-x
