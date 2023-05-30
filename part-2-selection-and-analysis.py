@@ -45,6 +45,8 @@ cursor = db.cursor()
 
 
 def main():
+    """Entrypoint to the program."""
+    # TODO: get relevant ids
     run_stage("stage 1", [])
 
 
@@ -59,11 +61,13 @@ def run_stage(stage_name: str, record_id_list: list[str]):
     """Run the stage."""
     print(f"You are running { stage_name } and have { len(record_id_list) } records to go through.")
 
+    stage_relevant_columns: dict[str, list[str]] = {}
     stage_insertion_queries: dict[str, str] = {}
     for table in OUTPUT_TABLES[stage_name]:
         relevant_columns = get_columns_from_table_name(table)
         relevant_columns.remove("paper_analysis_id")
-    
+
+        stage_relevant_columns[table] = relevant_columns
         stage_insertion_queries[table] = f"""
             INSERT INTO { table } 
                 ({ ", ".join(relevant_columns) })
@@ -74,12 +78,27 @@ def run_stage(stage_name: str, record_id_list: list[str]):
     while i < len(record_id_list):
         print(f"CURRENT RECORD NUMBER: {record_id_list[i]}")
         # Print selected information on the paper
-
-        # Ask for input
-
+        global cursor
+        cursor.execute(QUERY_PAPER_INFO, (record_id_list[i],))
+        
         for table in OUTPUT_TABLES[stage_name]:
+            # Perhaps a dictionary would be safer to use,
+            # but I'm just going to go with a list for now
+            input_record_info = []
+
+            # Ask for input
+            for column in stage_relevant_columns[table]:
+                current_col = input(f"{column}: ")
+                while current_col not in [0, 1]:
+                    if current_col == "q":  # quit
+                        return
+                    else:
+                        current_col = input(f"{column}: ")
+                input_record_info.append(current_col)
+
             # Insert into table
-            print("placeholder")
+            global cursor
+            cursor.execute(stage_insertion_queries[table], tuple(input_record_info))
         
         i += 1
 
